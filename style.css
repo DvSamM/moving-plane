@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.myport{
+    margin-top: -100px;
+}
+.plane{
+    position: relative;
+    top: -380px;
+    left: 900px;
+    animation-name: plane;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes plane{
+    0%{
+        transform: translateX(0px);
+    }
+
+    25%{
+        transform: translate(-200px -100px);
+    }
+
+     50%{
+        transform: translate(-1900px, -300px);
+    }
+     75%{
+        transform: translate(-1000px, -700px) ;
+    }
+    100%{
+        transform: translate(-1900px, -1500px);
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    body,html{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
